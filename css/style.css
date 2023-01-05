@@ -1,0 +1,38 @@
+body,a,p,span{
+    font-family: 'Poppins', sans-serif;
+}
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    max-width:100%;
+}
+/* header css  */
+header .header-logo{
+    width: 110px;
+    height: auto;
+}
+header .collapse ul li a{
+    color: rgb(0, 0, 0);
+    margin: 5px 15px;
+    position: relative;
+}
+header .collapse ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f63a6f;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+    visibility: hidden;
+}
+header .collapse ul li a:hover::after{
+    transform: scaleX(1);
+    visibility: visible;
+    width: 100%;
+    height: 2px;
+}
